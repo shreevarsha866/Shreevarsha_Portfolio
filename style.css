@@ -692,7 +692,13 @@ h1 {
   overflow: hidden;
   transition: all 0.3s ease;
   padding-bottom: 20px;
+
+/* ✅ ADDED (DO NOT REMOVE OLD CODE) */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .showcase-card:hover {
   transform: translateY(-8px);
@@ -715,6 +721,15 @@ h1 {
   font-weight: 700;
   color: #a5b4fc;
   margin: 20px 0 15px;
+}
+
+/* ✅ ADDED: Project Insight Text */
+.project-insight {
+  font-size: 0.9rem;
+  color: #cfd8ff;
+  line-height: 1.5;
+  margin: 0 20px 18px;
+  text-align: center;
 }
 
 /* Tags */
@@ -790,7 +805,25 @@ h1 {
     margin: 0 auto;
   }
 }
+/* =========================
+========================= */
+.project-insight ul {
+  padding-left: 18px;
+  margin: 0;
+  list-style-position: inside;
+}
 
+.project-insight li {
+  font-size: 0.9rem;
+  color: #cfd8ff;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.project-insight li:last-child {
+  margin-bottom: 0;
+}
 
 /* =========================
    CERTIFICATES SECTION
