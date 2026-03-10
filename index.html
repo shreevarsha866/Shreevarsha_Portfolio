@@ -528,7 +528,7 @@
         <div class="stat-box"><div class="stat-num">20%</div><div class="stat-label">Model Performance ↑</div></div>
       </div>
       <div class="hero-socials">
-        <a href="mailto:varshashree866@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+        <a href="/cdn-cgi/l/email-protection#d4a2b5a6a7bcb5a7bca6b1b1ece2e294b3b9b5bdb8fab7bbb9" class="social-btn"><i class="fas fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/s-shreevarsha-503887218/" class="social-btn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/shreevarsha866" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://github.com/shreevarsha866" class="social-btn" target="_blank"><i class="fas fa-globe"></i></a>
@@ -587,7 +587,7 @@
           <div class="quick-item"><i class="fas fa-map-marker-alt"></i><span>Tindivanam, Tamil Nadu</span></div>
           <div class="quick-item"><i class="fas fa-graduation-cap"></i><span>BE · Electronics &amp; Communication</span></div>
           <div class="quick-item"><i class="fas fa-briefcase"></i><strong>Data Science Intern · VCodez</strong></div>
-          <div class="quick-item"><i class="fas fa-envelope"></i><span><a href="mailto:varshashree866@gmail.com" class="__cf_email__" data-cfemail="3d4b5c4f4e555c4e554f5858050b0b7d5a505c5451135e5250">[email&#160;protected]</a></span></div>
+          <div class="quick-item"><i class="fas fa-envelope"></i><span><a href="/cdn-cgi/l/email-protection#47312635342f26342f3522227f717107202a262e2b6924282a" class="__cf_email__" data-cfemail="3d4b5c4f4e555c4e554f5858050b0b7d5a505c5451135e5250">[email&#160;protected]</a></span></div>
         </div>
       </div>
       <div class="about-right">
@@ -904,7 +904,7 @@
       <h2 class="sec-title">Let's <em>Connect</em></h2>
       <p>I'm open to full-time Data Science roles and ML engineering opportunities. Whether you have a role in mind or just want to say hi — feel free to reach out!</p>
       <div class="contact-grid">
-        <a href="mailto:varshashree866@gmail.com" class="contact-chip primary"><i class="fas fa-envelope"></i> varshashree866@gmail.com</a>
+        <a href="/cdn-cgi/l/email-protection#addbccdfdec5ccdec5dfc8c8959b9bedcac0ccc4c183cec2c0" class="contact-chip primary"><i class="fas fa-envelope"></i> <span class="__cf_email__" data-cfemail="b8ced9cacbd0d9cbd0cadddd808e8ef8dfd5d9d1d496dbd7d5">[email&#160;protected]</span></a>
         <a href="https://www.linkedin.com/in/s-shreevarsha-503887218/" class="contact-chip outline" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
         <a href="https://github.com/shreevarsha866" class="contact-chip outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
@@ -917,7 +917,7 @@
   <p>© 2026 <span>Shreevarsha S</span> · Crafted with passion &amp; precision</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
@@ -934,11 +934,311 @@
     el.addEventListener('mouseleave', () => { cursor.classList.remove('expand'); ring.classList.remove('expand'); });
   });
 
-  // Scroll reveal
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+<!-- ============================================================
+     VISITOR TRACKING + ADMIN PANEL
+     Access: Press Ctrl+Shift+A  or  type 'admin' anywhere
+     Password: shree2026
+============================================================ -->
+
+<!-- Admin Modal Overlay -->
+<div id="adminOverlay" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);" onclick="if(event.target===this)closeAdmin()"></div>
+
+<!-- Admin Panel -->
+<div id="adminPanel" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:100000;width:min(94vw,860px);max-height:88vh;overflow-y:auto;background:#0d1220;border:1px solid rgba(123,110,246,0.35);border-radius:24px;box-shadow:0 0 80px rgba(123,110,246,0.25),0 30px 80px rgba(0,0,0,0.6);">
+
+  <!-- Login Screen -->
+  <div id="adminLogin" style="padding:3rem;text-align:center;">
+    <div style="width:60px;height:60px;background:rgba(123,110,246,0.15);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.6rem;">🔐</div>
+    <h2 style="font-family:'Instrument Serif',serif;font-size:2rem;margin-bottom:0.5rem;color:#e2e8f4;">Admin <em style='color:#7b6ef6;font-style:italic;'>Access</em></h2>
+    <p style="color:#64748b;margin-bottom:2rem;font-size:0.9rem;">Enter your password to view portfolio analytics</p>
+    <input id="adminPass" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkAdmin()"
+      style="width:260px;padding:0.8rem 1.4rem;border-radius:50px;border:1px solid rgba(123,110,246,0.3);background:#090e1a;color:#e2e8f4;font-size:0.95rem;outline:none;text-align:center;display:block;margin:0 auto 1rem;"/>
+    <button onclick="checkAdmin()" style="background:#7b6ef6;color:#fff;border:none;padding:0.75rem 2.5rem;border-radius:50px;font-size:0.95rem;font-weight:600;cursor:pointer;">Unlock Dashboard</button>
+    <p id="adminErr" style="color:#f87171;margin-top:1rem;font-size:0.85rem;display:none;">Incorrect password. Try again.</p>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="adminDash" style="display:none;padding:2.5rem;">
+    <!-- Header -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#7b6ef6;margin-bottom:0.4rem;">PRIVATE · ADMIN VIEW</div>
+        <h2 style="font-family:'Instrument Serif',serif;font-size:1.8rem;color:#e2e8f4;margin:0;">Portfolio <em style='color:#7b6ef6;font-style:italic;'>Analytics</em></h2>
+      </div>
+      <div style="display:flex;gap:0.8rem;align-items:center;">
+        <button onclick="clearVisitors()" style="background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.3);color:#f87171;padding:0.5rem 1.2rem;border-radius:50px;font-size:0.8rem;cursor:pointer;">Clear Data</button>
+        <button onclick="closeAdmin()" style="background:rgba(123,110,246,0.1);border:1px solid rgba(123,110,246,0.25);color:#7b6ef6;padding:0.5rem 1.2rem;border-radius:50px;font-size:0.8rem;cursor:pointer;">✕ Close</button>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div id="adminStats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem;"></div>
+
+    <!-- Charts Row -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;">
+      <div style="background:#090e1a;border:1px solid rgba(123,110,246,0.15);border-radius:16px;padding:1.5rem;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7b6ef6;margin-bottom:1rem;">Visits per Day</div>
+        <canvas id="visitsChart" height="140"></canvas>
+      </div>
+      <div style="background:#090e1a;border:1px solid rgba(123,110,246,0.15);border-radius:16px;padding:1.5rem;">
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7b6ef6;margin-bottom:1rem;">Top Sections Viewed</div>
+        <div id="sectionStats"></div>
+      </div>
+    </div>
+
+    <!-- Visitor Log -->
+    <div style="background:#090e1a;border:1px solid rgba(123,110,246,0.15);border-radius:16px;padding:1.5rem;">
+      <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7b6ef6;margin-bottom:1rem;">Recent Visitors</div>
+      <div id="visitorLog"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── VISITOR TRACKING ──────────────────────────────────────────
+const STORAGE_KEY = 'sv_portfolio_visitors';
+const ADMIN_PASS  = 'shree2026';
+
+function getVisitors() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; } catch(e) { return []; }
+}
+function saveVisitors(v) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(v)); } catch(e) {}
+}
+
+// Track section views
+const sectionsSeen = new Set();
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting) sectionsSeen.add(e.target.id || e.target.className.split(' ')[0]);
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+
+// Record this visit
+function recordVisit() {
+  const visitors = getVisitors();
+  const visit = {
+    id: Date.now(),
+    time: new Date().toISOString(),
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    screen: screen.width + '×' + screen.height,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    referrer: document.referrer || 'Direct',
+    sections: []
+  };
+
+  // Save sections on unload
+  window.addEventListener('beforeunload', () => {
+    visit.sections = [...sectionsSeen];
+    visit.timeSpent = Math.round((Date.now() - visit.id) / 1000);
+    const all = getVisitors();
+    all.push(visit);
+    if(all.length > 200) all.splice(0, all.length - 200); // keep last 200
+    saveVisitors(all);
+  });
+
+  // Also save after 3s in case page stays open (SPA behaviour)
+  setTimeout(() => {
+    visit.sections = [...sectionsSeen];
+    visit.timeSpent = Math.round((Date.now() - visit.id) / 1000);
+    const all = getVisitors();
+    // avoid duplicate for same session
+    if(!all.find(v => v.id === visit.id)) {
+      all.push(visit);
+      if(all.length > 200) all.splice(0, all.length - 200);
+      saveVisitors(all);
+    }
+  }, 3000);
+}
+recordVisit();
+
+// ── ADMIN PANEL ───────────────────────────────────────────────
+function openAdmin() {
+  document.getElementById('adminOverlay').style.display = 'block';
+  document.getElementById('adminPanel').style.display   = 'block';
+  document.getElementById('adminLogin').style.display   = 'block';
+  document.getElementById('adminDash').style.display    = 'none';
+  document.getElementById('adminPass').value = '';
+  document.getElementById('adminErr').style.display = 'none';
+  setTimeout(() => document.getElementById('adminPass').focus(), 100);
+}
+function closeAdmin() {
+  document.getElementById('adminOverlay').style.display = 'none';
+  document.getElementById('adminPanel').style.display   = 'none';
+}
+function checkAdmin() {
+  if(document.getElementById('adminPass').value === ADMIN_PASS) {
+    document.getElementById('adminLogin').style.display = 'none';
+    document.getElementById('adminDash').style.display  = 'block';
+    renderDashboard();
+  } else {
+    document.getElementById('adminErr').style.display = 'block';
+    document.getElementById('adminPass').value = '';
+  }
+}
+
+// Keyboard shortcut: Ctrl+Shift+A
+document.addEventListener('keydown', e => {
+  if(e.ctrlKey && e.shiftKey && e.key === 'A') { e.preventDefault(); openAdmin(); }
+});
+
+// Secret word trigger: type 'admin' anywhere
+let typedBuffer = '';
+document.addEventListener('keypress', e => {
+  typedBuffer += e.key.toLowerCase();
+  if(typedBuffer.includes('admin')) { openAdmin(); typedBuffer = ''; }
+  if(typedBuffer.length > 10) typedBuffer = typedBuffer.slice(-10);
+});
+
+function renderDashboard() {
+  const visitors = getVisitors();
+  const total    = visitors.length;
+  const today    = new Date().toDateString();
+  const todayV   = visitors.filter(v => new Date(v.time).toDateString() === today).length;
+
+  // Avg time
+  const withTime = visitors.filter(v => v.timeSpent);
+  const avgTime  = withTime.length ? Math.round(withTime.reduce((a,v) => a + v.timeSpent, 0) / withTime.length) : 0;
+
+  // Unique days
+  const days = new Set(visitors.map(v => new Date(v.time).toDateString())).size;
+
+  // Stat cards
+  const stats = [
+    { label:'Total Visits',    value: total,        color:'#7b6ef6', icon:'👁️' },
+    { label:'Today',           value: todayV,        color:'#38bdf8', icon:'📅' },
+    { label:'Avg Time (sec)',  value: avgTime + 's', color:'#34d399', icon:'⏱️' },
+    { label:'Days Active',     value: days,          color:'#f59e0b', icon:'📆' },
+  ];
+  document.getElementById('adminStats').innerHTML = stats.map(s => `
+    <div style="background:#090e1a;border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:1.2rem;">
+      <div style="font-size:1.5rem;margin-bottom:0.4rem;">${s.icon}</div>
+      <div style="font-family:'Instrument Serif',serif;font-size:2rem;color:${s.color};line-height:1;">${s.value}</div>
+      <div style="color:#64748b;font-size:0.75rem;margin-top:0.3rem;">${s.label}</div>
+    </div>
+  `).join('');
+
+  // Visits per day bar chart (last 7 days)
+  const dayMap = {};
+  for(let i = 6; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    dayMap[d.toDateString()] = 0;
+  }
+  visitors.forEach(v => {
+    const d = new Date(v.time).toDateString();
+    if(d in dayMap) dayMap[d]++;
+  });
+  const labels = Object.keys(dayMap).map(d => { const dt=new Date(d); return dt.toLocaleDateString('en',{weekday:'short',month:'short',day:'numeric'}); });
+  const vals   = Object.values(dayMap);
+  const maxVal = Math.max(...vals, 1);
+
+  const ctx = document.getElementById('visitsChart').getContext('2d');
+  // Simple canvas bar chart
+  const canvas = document.getElementById('visitsChart');
+  canvas.width = canvas.parentElement.clientWidth - 48;
+  canvas.height = 140;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const bw = (canvas.width - 20) / vals.length;
+  const chartH = 100;
+  vals.forEach((v, i) => {
+    const barH = (v / maxVal) * chartH;
+    const x = 10 + i * bw;
+    const y = chartH - barH + 10;
+    // bar
+    const grad = ctx.createLinearGradient(0, y, 0, chartH + 10);
+    grad.addColorStop(0, '#7b6ef6');
+    grad.addColorStop(1, 'rgba(123,110,246,0.2)');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.roundRect(x + 4, y, bw - 8, barH, 4);
+    ctx.fill();
+    // label
+    ctx.fillStyle = '#64748b';
+    ctx.font = '9px Space Grotesk, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(labels[i].split(',')[0], x + bw/2, chartH + 25);
+    // value
+    if(v > 0) {
+      ctx.fillStyle = '#e2e8f4';
+      ctx.font = 'bold 11px Space Grotesk, sans-serif';
+      ctx.fillText(v, x + bw/2, y - 4);
+    }
+  });
+
+  // Section stats
+  const secCount = {};
+  visitors.forEach(v => (v.sections||[]).forEach(s => { secCount[s] = (secCount[s]||0)+1; }));
+  const sorted = Object.entries(secCount).sort((a,b)=>b[1]-a[1]).slice(0,6);
+  const maxSec = sorted[0]?.[1] || 1;
+  document.getElementById('sectionStats').innerHTML = sorted.length ? sorted.map(([name, cnt]) => `
+    <div style="margin-bottom:0.9rem;">
+      <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:0.3rem;">
+        <span style="color:#e2e8f4;font-weight:500;text-transform:capitalize;">${name}</span>
+        <span style="color:#7b6ef6;font-weight:700;">${cnt}</span>
+      </div>
+      <div style="background:rgba(123,110,246,0.1);border-radius:50px;height:6px;">
+        <div style="background:linear-gradient(90deg,#7b6ef6,#38bdf8);height:6px;border-radius:50px;width:${(cnt/maxSec*100).toFixed(0)}%;transition:width 0.6s;"></div>
+      </div>
+    </div>
+  `).join('') : '<p style="color:#64748b;font-size:0.85rem;">No section data yet.</p>';
+
+  // Visitor log
+  const recent = [...visitors].reverse().slice(0, 20);
+  const getBrowser = ua => {
+    if(ua.includes('Chrome') && !ua.includes('Edg')) return '🌐 Chrome';
+    if(ua.includes('Firefox')) return '🦊 Firefox';
+    if(ua.includes('Safari') && !ua.includes('Chrome')) return '🧭 Safari';
+    if(ua.includes('Edg')) return '🔷 Edge';
+    return '🌍 Browser';
+  };
+  const getDevice = ua => {
+    if(/Mobile|Android|iPhone/.test(ua)) return '📱 Mobile';
+    if(/iPad|Tablet/.test(ua)) return '💊 Tablet';
+    return '🖥️ Desktop';
+  };
+  document.getElementById('visitorLog').innerHTML = recent.length ? `
+    <div style="overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
+      <thead><tr style="color:#64748b;border-bottom:1px solid rgba(255,255,255,0.06);">
+        <th style="text-align:left;padding:0.5rem 0.75rem;">#</th>
+        <th style="text-align:left;padding:0.5rem 0.75rem;">Date & Time</th>
+        <th style="text-align:left;padding:0.5rem 0.75rem;">Device</th>
+        <th style="text-align:left;padding:0.5rem 0.75rem;">Browser</th>
+        <th style="text-align:left;padding:0.5rem 0.75rem;">Screen</th>
+        <th style="text-align:left;padding:0.5rem 0.75rem;">Time Spent</th>
+        <th style="text-align:left;padding:0.5rem 0.75rem;">Referrer</th>
+      </tr></thead>
+      <tbody>${recent.map((v,i)=>`
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.2s;" onmouseenter="this.style.background='rgba(123,110,246,0.05)'" onmouseleave="this.style.background=''">
+          <td style="padding:0.6rem 0.75rem;color:#64748b;">${visitors.length - i}</td>
+          <td style="padding:0.6rem 0.75rem;color:#e2e8f4;">${new Date(v.time).toLocaleString('en-IN',{dateStyle:'medium',timeStyle:'short'})}</td>
+          <td style="padding:0.6rem 0.75rem;">${getDevice(v.userAgent)}</td>
+          <td style="padding:0.6rem 0.75rem;">${getBrowser(v.userAgent)}</td>
+          <td style="padding:0.6rem 0.75rem;color:#64748b;">${v.screen||'—'}</td>
+          <td style="padding:0.6rem 0.75rem;color:${(v.timeSpent||0)>60?'#34d399':'#64748b'};">${v.timeSpent ? (v.timeSpent > 60 ? Math.round(v.timeSpent/60)+'m '+v.timeSpent%60+'s' : v.timeSpent+'s') : '—'}</td>
+          <td style="padding:0.6rem 0.75rem;color:#64748b;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${v.referrer||'Direct'}</td>
+        </tr>
+      `).join('')}</tbody>
+    </table></div>
+  ` : '<p style="color:#64748b;font-size:0.85rem;text-align:center;padding:2rem 0;">No visitor data yet. Share your portfolio to start tracking! 🚀</p>';
+}
+
+function clearVisitors() {
+  if(confirm('Clear all visitor data? This cannot be undone.')) {
+    localStorage.removeItem(STORAGE_KEY);
+    renderDashboard();
+  }
+}
 </script>
 </body>
 </html>
